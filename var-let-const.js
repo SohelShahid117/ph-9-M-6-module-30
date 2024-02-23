@@ -76,6 +76,25 @@ stdInfo({
     age:2
 })
 
-// stdInfo({});---->ata teke kibabe o/p pawa jabe
+// stdInfo({});`---->ata teke kibabe o/p pawa jabe
 
 // 30-3 Template String, Multiple Line String, Dynamic String
+
+const a = 10;
+const b = 20;
+const rslt = 'sum of' + a + ' and ' + b + ' is ' + a + b;
+console.log(rslt);
+
+const rslt2 = 'sum of ' + a + ' and ' + b + ' is ' + (a + b);
+console.log(rslt2);
+
+const rslt3 = `sum of ${a} and ${b} is ${(a+b)}`
+console.log(rslt3);
+
+const msg = 'hi john\n'+'cena cena lage';
+console.log(msg);
+
+const msg2 = `hi jhon
+cena cena lage
+maramari kore`;
+console.log(msg2)
