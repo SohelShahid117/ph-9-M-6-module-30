@@ -1,4 +1,4 @@
-// 30-6 Spread Operator, Array Max, Copy Arrays:
+// 30-7 (Advanced) Object And Array Destructure
 const student = {
     name : "sohel",
     age:33,
