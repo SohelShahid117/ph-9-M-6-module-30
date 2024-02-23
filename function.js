@@ -19,7 +19,6 @@ let sum3 = add3(9,10);
 console.log(sum3);
 
 // 30-5 More Arrow Functions And Big Arrow Function
-
 const sub =(x,y)=>x-y;
 let diff = sub(12,22);
 console.log(diff);
