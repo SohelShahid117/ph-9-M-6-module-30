@@ -354,4 +354,43 @@ console.log(glass)
 
 
 30-9 For Of, For In, Module Summary And Practice Problems
+//for of--->use in Array & String
+//for in--->use in Object
 1.
+const numbers = [1,2,3,44,55,6,77];
+for(const num of numbers){
+    console.log(num);
+}
+
+const nobab = `Siraj Ud Dowla`;
+for(const char of nobab){
+    console.log(char);
+}
+
+2.
+const galss = {
+    name : 'glass',
+    price : 10,
+    isCleaned:true,
+    source:"BD"
+}
+for(const ky in galss){
+    console.log(ky + ":" + galss[ky]);
+}
+
+const keyss = Object.keys(galss);
+console.log(keyss);//[ 'name', 'price', 'isCleaned', 'source' ]
+for(key of keyss){
+    // console.log(key);
+    // console.log(galss.key);
+    console.log(`${key} : ${galss[key]}`);
+}
+
+
+
+
+*************ES6 Interview question link:
+1.https://www.mygreatlearning.com/blog/es6-interview-questions/
+2.https://www.interviewbit.com/es6-interview-questions/
+3.https://www.linkedin.com/pulse/top-10-javascript-interview-questions-laurence-svekis--1c/
+4.https://codersera.com/blog/advanced-javascript-interview-questions/
