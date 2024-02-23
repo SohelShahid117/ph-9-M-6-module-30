@@ -78,6 +78,21 @@ stdInfo({
 
 // stdInfo({});`---->ata teke kibabe o/p pawa jabe
 
+// Function with default object parameter
+function greetUser(user = { name: 'Guest', age: 18 }) {
+    console.log(`Hello, ${user.name}. You are ${user.age} years old.`);
+  }
+  
+  // Calling the function with no arguments
+  greetUser(); // Output: Hello, Guest. You are 18 years old.
+  
+  // Calling the function with only one property of the object
+  greetUser({ name: 'Alice' }); // Output: Hello, Alice. You are 18 years old.
+  greetUser({}); 
+  
+  // Calling the function with a complete object
+  greetUser({ name: 'Bob', age: 25 }); // Output: Hello, Bob. You are 25 years old.
+
 // 30-3 Template String, Multiple Line String, Dynamic String
 
 const a = 10;
