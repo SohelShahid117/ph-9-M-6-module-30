@@ -1,1 +1,147 @@
-******************************ph-9-M-6-module-30*********************************
+*********************************summary-ph-9-M-6-Module 30: JS Recap And Basic Es6, Es5*********************************
+
+
+30-0 What Matters In This Milestone
+1.  
+u have learned:
+    1.html
+    2.css
+    3.tailwind css
+    4.daisyUI
+    5.JS
+
+2.u can earn knowledege from milestone-6:
+module-30:JS Recap & Basic ES6,ES5
+    1.diff betwn var vs let vs const 
+    2.default parameter in JS
+    3.string literal as template
+    4.arrow function  in JS
+    6.array destructuring
+    7.object destructuring
+    
+module-31:advanced(more-ES6)
+    1.map,filter,find,reduce
+    2.operation chaining
+    3.js array forEach method
+    4.dot vs bracket in JS
+
+3.
+module-32:understand common JS concepts
+    1.data type(primitive====>nmbr,strng,boolean,null,undefined,composite/non-primitive===>object,array,)
+    2.null vs undefined
+    3.== vs ===
+
+module-33:API,JSON,Data load,dynamic website
+    1.what is internet
+    2.what is an API
+    3.what is JSON
+    4.GET,POST,PUT,DELETE
+
+module-34:API Recap with phone hunter
+
+4.
+module-35:more about JS
+    1.setTimeout,setInterval,clearInterval
+    2.eventLoop,concurrency
+    3.execution stack
+    4.the callStack
+    5.promise(pending,reject,resolve)
+    6.async,await
+    
+module-36:ES6 & API related assignment-6
+
+module-36.5:Bonus-local storage
+
+
+
+
+
+module-30:JS Recap & Basic ES6,ES5:
+
+30-1 ES6 Intro Difference Between Var, Let And Const:
+1.
+const nmbr = [10,203,30,40,55];
+console.log(nmbr);
+nmbr.push(5);
+console.log(nmbr);
+nmbr[1]=2024;
+console.log(nmbr);
+
+2.
+const mny = 10;
+console.log(mny);
+taka = mny + 500;
+console.log(taka);
+
+const std = {
+    name:'sohel',
+    age:33
+}
+console.log(std);
+
+std.name = 'shahid';
+console.log(std);
+
+3.
+let sum = 0;
+for(i=0;i<=5;i++){
+    sum = sum+i;
+}
+console.log(sum);
+
+
+// 30-2 Function Default Parameter For Not Provided Values
+
+1.
+function add(num1=0,num2=0){
+    const sum =num1 + num2;
+    return sum;
+}
+const result = add(2,3);
+console.log(result);
+
+const result2 = add(2);
+console.log(result2);
+
+const result3 = add();
+console.log(result3);
+
+2.
+function fullName(firstName='',lastName=''){
+    const fullName = firstName + " " + lastName;
+    return fullName;
+}
+const name = fullName('sohel');
+console.log(name);
+
+const name2 = fullName('sohel','shahid')
+console.log(name2);
+
+3.
+// for Array default param--->[]
+function nmbr2(numb =[]){
+    number = numb;
+    return number;
+}
+let numberrr = nmbr2([2,3,4,5]);
+console.log(numberrr);
+let numberrr2 = nmbr2();
+console.log(numberrr2);
+
+4.
+function stdInfo(std={}){
+    nam = std.name;
+    age = std.age;
+    console.log(nam)
+    console.log(age)
+}
+stdInfo({
+    name: 'aadil',
+    age:2
+})
+
+stdInfo({});
+
+
+// 30-3 Template String, Multiple Line String, Dynamic String
+1.
